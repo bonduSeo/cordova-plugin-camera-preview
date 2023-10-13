@@ -276,6 +276,9 @@ CameraPreview.startRecordVideo = function (opts, onSuccess, onError) {
 CameraPreview.stopRecordVideo = function (onSuccess, onError) {
   exec(onSuccess, onError, PLUGIN_NAME, "stopRecordVideo");
 };
+CameraPreview.testAction = function (onSuccess, onError) {
+  exec(onSuccess, onError, PLUGIN_NAME, "testAction");
+};
 
 CameraPreview.FOCUS_MODE = {
   FIXED: 'fixed',
